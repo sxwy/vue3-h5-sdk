@@ -11,6 +11,6 @@ export default Button
 
 declare module 'vue' {
   export interface GlobalComponents {
-    sxwyButton: typeof Button
+    SxwyButton: typeof Button
   }
 }
