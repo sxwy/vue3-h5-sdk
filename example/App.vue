@@ -1,5 +1,7 @@
 <template>
-  <div>哈哈哈哈</div>
+  <div>
+    <sxwy-button></sxwy-button>
+  </div>
 </template>
 
 <script lang="ts" setup></script>
