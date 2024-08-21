@@ -12,7 +12,7 @@ export default defineConfig((config) => {
     },
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
+        '@sxwy/mobile-sdk': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
     plugins: [vue(), vueJsx()]

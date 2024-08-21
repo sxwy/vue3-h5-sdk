@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import SXWYSDK from '../src/index'
+import SXWYMobileSDK from '@sxwy/mobile-sdk'
 
 const app = createApp(App)
 
-app.use(SXWYSDK).mount('#app')
+app.use(SXWYMobileSDK).mount('#app')
