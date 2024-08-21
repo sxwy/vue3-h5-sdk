@@ -5,11 +5,9 @@ Button.install = (app: App) => {
   app.component(Button.name!, Button)
 }
 
-export { Button }
-
 export * from './types'
 
-export default Button
+export { Button as default, Button }
 
 declare module 'vue' {
   export interface GlobalComponents {
