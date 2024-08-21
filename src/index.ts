@@ -1,7 +1,7 @@
 import { type App } from 'vue'
 import Button from './components/Button'
 
-const components = [Button]
+export const components = [Button]
 
 const install = (app: App) => {
   components.forEach((compoment) => {
@@ -9,8 +9,9 @@ const install = (app: App) => {
   })
 }
 
-export * from './components/Button'
+export { version } from '../package.json'
 
+export * from './components/Button'
 export * from './constants'
 export * from './utils'
 
