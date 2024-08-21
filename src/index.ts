@@ -15,4 +15,6 @@ export * from './components/Button'
 export * from './constants'
 export * from './utils'
 
-export { install as default, components }
+export { components }
+
+export default install

@@ -7,7 +7,15 @@ export default defineComponent({
     return () => {
       return (
         <>
-          <div class="btn">123</div>
+          <div
+            class="btn btn1"
+            style="color: blue"
+            onClick={() => {
+              console.log(123)
+            }}
+          >
+            123
+          </div>
         </>
       )
     }
