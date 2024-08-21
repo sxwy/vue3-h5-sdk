@@ -2,8 +2,6 @@
   "include": ["src/**/*"],
   "compilerOptions": {
     "strict": true,
-    "allowJs": false,
-    "outDir": "./esm",
     "rootDir": "./src",
     "target": "ES2015",
     "module": "ES2015",
