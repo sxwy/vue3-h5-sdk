@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import Button from './components/Button'
+import Button from './components/button'
 
 export const install = (app: App) => {
   const components = [Button]
@@ -10,7 +10,8 @@ export const install = (app: App) => {
 
 export { version } from '../package.json'
 
-export * from './components/Button'
+export * from './components/button'
+
 export * from './constants'
 export * from './utils'
 

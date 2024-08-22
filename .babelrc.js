@@ -1,4 +1,5 @@
 module.exports = {
+  ignore: ['**/__tests__/**'],
   presets: [
     [
       '@babel/preset-env',
