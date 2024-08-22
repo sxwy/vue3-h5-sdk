@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import SXWYH5SDK from '../esm'
+import SXWYH5SDK from '@sxwy/h5-sdk'
+// import SXWYH5SDK from '../esm'
 
 const app = createApp(App)
 

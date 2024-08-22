@@ -1,11 +1,10 @@
-import { type App } from 'vue'
+import type { App } from 'vue'
 import Button from './components/Button'
 
-const components = [Button]
-
-const install = (app: App) => {
+export const install = (app: App) => {
+  const components = [Button]
   components.forEach((compoment) => {
-    app.component(compoment.name!, compoment)
+    app.use(compoment)
   })
 }
 
@@ -14,7 +13,5 @@ export { version } from '../package.json'
 export * from './components/Button'
 export * from './constants'
 export * from './utils'
-
-export { components }
 
 export default install
