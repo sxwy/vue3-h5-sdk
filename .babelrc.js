@@ -1,11 +1,16 @@
-const compile = (isESM) => {
+const compile = (format) => {
+  const formatObj = {
+    esm: false,
+    cjs: 'cjs',
+    umd: 'umd'
+  }
   return {
     ignore: ['**/__tests__/**'],
     presets: [
       [
         '@babel/preset-env',
         {
-          modules: isESM ? false : 'cjs'
+          modules: formatObj[format]
         }
       ],
       [
@@ -30,7 +35,8 @@ const compile = (isESM) => {
 
 module.exports = {
   env: {
-    esm: compile(true),
-    cjs: compile(false)
+    esm: compile('esm'),
+    cjs: compile('cjs'),
+    umd: compile('umd')
   }
 }
