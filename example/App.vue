@@ -1,6 +1,7 @@
 <template>
   <div>
     <sxwy-button></sxwy-button>
+    <sxwy-loading></sxwy-loading>
   </div>
 </template>
 
