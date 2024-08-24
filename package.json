@@ -1,10 +1,53 @@
 {
-  "name": "vue3-h5-sdk",
+  "name": "@sxwy/h5-sdk",
   "version": "1.0.0",
+  "description": "Vue3 components library",
   "private": true,
   "engines": {
     "node": "20.12.0",
     "pnpm": "9"
+  },
+  "unpkg": "./dist/h5-sdk.js",
+  "jsdelivr": "./dist/h5-sdk.js",
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./esm/index.js",
+      "types": "./esm/index.d.ts"
+    },
+    "./esm": {
+      "import": "./esm/index.js",
+      "types": "./esm/index.d.ts"
+    },
+    "./lib": {
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "sideEffects": [
+    "./dist/*.css",
+    "./esm/**/styles/*",
+    "./lib/**/styles/*"
+  ],
+  "files": [
+    "./dist",
+    "./esm",
+    "./lib"
+  ],
+  "keywords": [
+    "sxwy",
+    "h5",
+    "sdk"
+  ],
+  "author": "chenjie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sxwy/vue3-h5-sdk.git"
   },
   "scripts": {
     "prepare": "husky install",
@@ -34,7 +77,7 @@
     "format:js": "eslint --fix --ext .vue,.js,.jsx,.ts,.tsx ./src",
     "format:css": "stylelint --fix --allow-empty-input ./src/**.{vue,css,less,sass,scss}"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.4.38"
   },
   "devDependencies": {
@@ -66,6 +109,7 @@
     "stylelint": "^16.8.2",
     "typescript": "~5.5.4",
     "vite": "^5.4.2",
-    "vitest": "^2.0.5"
+    "vitest": "^2.0.5",
+    "vue": "^3.4.38"
   }
 }
