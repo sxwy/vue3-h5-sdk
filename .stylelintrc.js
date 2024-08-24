@@ -4,6 +4,7 @@ module.exports = {
     'no-empty-source': null,
     'no-descending-specificity': null,
     'font-family-no-missing-generic-family-keyword': null,
+    'import-notation': 'string',
     'selector-pseudo-class-no-unknown': [
       true,
       {

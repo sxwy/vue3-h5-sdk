@@ -11,6 +11,25 @@ export default defineConfig((config) => {
         '@sxwy/h5-sdk': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
-    plugins: [vue(), vueJsx()]
+    plugins: [vue(), vueJsx()],
+    build: {
+      outDir: './dist',
+      copyPublicDir: false,
+      lib: {
+        entry: './src',
+        name: 'H5SDK',
+        fileName: () => 'h5-sdk.js',
+        formats: ['umd']
+      },
+      rollupOptions: {
+        external: ['vue'],
+        output: {
+          exports: 'named',
+          globals: {
+            vue: 'Vue'
+          }
+        }
+      }
+    }
   }
 })

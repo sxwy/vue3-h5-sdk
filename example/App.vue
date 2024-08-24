@@ -5,7 +5,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  // import '../esm/components/button/styles'
+</script>
 
 <style lang="scss">
   .a {
