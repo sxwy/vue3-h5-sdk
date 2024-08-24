@@ -12,6 +12,7 @@
   "main": "./lib/index.js",
   "module": "./esm/index.js",
   "types": "./esm/index.d.ts",
+  "style": "./esm/index.css",
   "exports": {
     ".": {
       "require": "./lib/index.js",
