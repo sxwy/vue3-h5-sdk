@@ -1,8 +1,7 @@
 const compile = (format) => {
   const formatObj = {
     esm: false,
-    cjs: 'cjs',
-    umd: 'umd'
+    cjs: 'cjs'
   }
   return {
     ignore: ['**/__tests__/**'],
@@ -36,7 +35,6 @@ const compile = (format) => {
 module.exports = {
   env: {
     esm: compile('esm'),
-    cjs: compile('cjs'),
-    umd: compile('umd')
+    cjs: compile('cjs')
   }
 }

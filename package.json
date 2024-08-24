@@ -84,7 +84,7 @@
   "devDependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
     "@sxwy/commitlint-config": "^2.0.0",
     "@sxwy/eslint-config-vue": "^2.0.0",
@@ -92,7 +92,7 @@
     "@sxwy/stylelint-config": "^2.0.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^22.4.2",
+    "@types/node": "^22.5.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/babel-plugin-jsx": "^1.2.2",
