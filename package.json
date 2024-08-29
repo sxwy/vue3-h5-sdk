@@ -56,6 +56,7 @@
     "pre-commit": "lint-staged -p false",
     "test:unit": "vitest",
     "serve:example": "vite --host",
+    "prebuild": "pnpm run test:unit",
     "build": "pnpm run build:esm && pnpm run build:cjs && pnpm run build:umd",
     "build:esm": "pnpm run clean:esm && pnpm run build:esm:type && pnpm run build:esm:js && pnpm run build:esm:css",
     "build:cjs": "pnpm run clean:cjs && pnpm run build:cjs:type && pnpm run build:cjs:js && pnpm run build:cjs:css",
@@ -79,6 +80,8 @@
     "format:css": "stylelint --fix --allow-empty-input ./src/**.{vue,css,less,sass,scss}"
   },
   "peerDependencies": {
+    "axios": "^1.7.5",
+    "pinia": "^2.2.2",
     "vue": "^3.4.38"
   },
   "devDependencies": {
