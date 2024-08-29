@@ -1,2 +1,3 @@
 export * from './core'
-export { default as baseApi } from './baseApi'
+export * from './baseApi'
+export * from './wxApi'

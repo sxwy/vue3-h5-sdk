@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useUserStore } from '@/store'
+import { useUserStore } from '../../store'
 import { createError, defaultErrorCode, defaultErrorMessage } from './error'
 
 let isRefreshToken = false // 是否正在刷新 token
@@ -25,7 +25,7 @@ export default (requestConfig = {}) => {
     async (response) => {
       if (Object.prototype.toString.call(response.data) === '[object Object]') {
         const keys = Reflect.ownKeys(response.data)
-        if (keys.includes('code') || keys.includes('returncode')) {
+        if (keys.includes('code')) {
           const code = String(response.data.code || response.data.returncode)
           if (code === '10000') {
             return response.data.body

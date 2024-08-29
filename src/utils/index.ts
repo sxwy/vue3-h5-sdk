@@ -1,2 +1,3 @@
-export * from './createComponentName'
-export * from './with-install'
+export * from './api'
+export * from './create'
+export * from './withInstall'

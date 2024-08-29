@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
-import { login, getUserInfo, refreshToken } from '@/services'
-import type { LoginQuery, Session, User } from '@/types'
+import { login, getUserInfo, refreshToken } from '../services'
+import type { LoginQuery, Session, User } from '../types'
 
 export interface UserState {
   session: Session | null

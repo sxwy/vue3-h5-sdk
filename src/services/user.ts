@@ -1,5 +1,5 @@
-import { baseApi } from '@/api'
-import type { LoginQuery, Session, User } from '@/types'
+import { baseApi } from '../api'
+import type { LoginQuery, Session, User } from '../types'
 
 /**
  * 登录
