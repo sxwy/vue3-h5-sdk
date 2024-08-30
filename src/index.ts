@@ -6,9 +6,6 @@ import Loading from './components/loading'
 
 export { version } from '../package.json'
 
-export * from './components/button'
-export * from './components/loading'
-
 export * from './api'
 export * from './constants'
 export * from './services'
@@ -16,6 +13,9 @@ export * from './store'
 export * from './types'
 export * from './utils'
 export * from './config'
+
+export * from './components/button'
+export * from './components/loading'
 
 export default (config: H5SDKConfig) => {
   const createApi = () => {
