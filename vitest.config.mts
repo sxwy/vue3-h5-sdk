@@ -7,9 +7,11 @@ export default defineConfig((configEnv) => {
     viteConfig(configEnv),
     defineConfig({
       test: {
-        environment: 'jsdom',
+        include: ['**/__tests__/**'],
         exclude: [...configDefaults.exclude, 'e2e/**'],
-        root: fileURLToPath(new URL('./', import.meta.url))
+        environment: 'jsdom',
+        root: fileURLToPath(new URL('./', import.meta.url)),
+        watch: false
       }
     })
   )

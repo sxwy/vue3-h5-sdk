@@ -12,6 +12,9 @@ export default defineConfig((config) => {
       }
     },
     plugins: [vue(), vueJsx()],
+    server: {
+      host: true
+    },
     build: {
       outDir: './dist',
       copyPublicDir: false,
