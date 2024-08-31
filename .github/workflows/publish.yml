@@ -23,16 +23,6 @@ jobs:
         with:
           version: 9
 
-      - name: Test
-        run: |
-          ls
-          cd src
-          ls
-          cd components
-          ls
-          cd button
-          ls
-
       - name: Publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
