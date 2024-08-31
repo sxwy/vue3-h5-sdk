@@ -23,6 +23,9 @@ jobs:
         with:
           version: 9
 
+      - name: Test
+        run: ls
+
       - name: Publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
