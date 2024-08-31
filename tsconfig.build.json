@@ -2,6 +2,7 @@
   "include": ["./src/**/*"],
   "exclude": ["**/__tests__/**"],
   "compilerOptions": {
+    "baseUrl": "./",
     "rootDir": "./src",
     "target": "ES2015",
     "module": "ESNext",
