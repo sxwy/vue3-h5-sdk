@@ -2,7 +2,6 @@
   "name": "@sxwy/h5-sdk",
   "version": "1.0.0",
   "description": "Vue3 components library",
-  "private": true,
   "engines": {
     "node": "20.12.0",
     "pnpm": "9"
@@ -69,6 +68,8 @@
     "build:esm:css": "sass ./src:./esm --no-source-map",
     "build:cjs:css": "sass ./src:./lib --no-source-map",
     "build:umd:css": "sass ./src/styles/index.scss:./dist/h5-sdk.css --no-source-map",
+    "prerelease": "pnpm run build",
+    "release": "semantic-release",
     "clean:esm": "rimraf ./esm",
     "clean:cjs": "rimraf ./lib",
     "clean:umd": "rimraf ./dist",
@@ -89,6 +90,8 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@sxwy/commitlint-config": "^2.0.0",
     "@sxwy/eslint-config-vue": "^2.0.0",
     "@sxwy/prettier-config": "^2.0.0",
@@ -111,6 +114,7 @@
     "rimraf": "^6.0.1",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.1",
+    "semantic-release": "^24.1.0",
     "stylelint": "^16.9.0",
     "typescript": "~5.5.4",
     "vite": "^5.4.2",
