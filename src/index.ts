@@ -1,7 +1,7 @@
 import type { App } from 'vue'
 import { createBaseApi, createWxApi } from './api'
 import { h5SDKConfig, type H5SDKConfig } from './config'
-import Button from './components/Button'
+import Button from './components/button'
 import Loading from './components/loading'
 
 export { version } from '../package.json'
@@ -14,7 +14,7 @@ export * from './types'
 export * from './utils'
 export * from './config'
 
-export * from './components/Button'
+export * from './components/button'
 export * from './components/loading'
 
 export default (config: H5SDKConfig) => {
