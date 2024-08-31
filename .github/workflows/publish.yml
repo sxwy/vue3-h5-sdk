@@ -24,7 +24,14 @@ jobs:
           version: 9
 
       - name: Test
-        run: ls
+        run: |
+          ls
+          cd src
+          ls
+          cd components
+          ls
+          cd button
+          ls
 
       - name: Publish
         env:
