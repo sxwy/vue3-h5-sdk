@@ -14,6 +14,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "types": ["node"]
   }
 }
