@@ -1,8 +1,8 @@
 {
-  "include": ["./src/**/*"],
-  "exclude": ["**/__tests__/**"],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/__tests__/**"],
   "compilerOptions": {
-    "rootDir": "./src",
+    "rootDir": "src",
     "target": "ES2015",
     "module": "ES2015",
     "moduleResolution": "Node",
