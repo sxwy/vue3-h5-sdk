@@ -5,8 +5,6 @@
 TODO
 
 - 测试
-- 基础样式
-- 环境变量
 - 自动化发布
 - github action
 - .vue 文件编译？
