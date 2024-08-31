@@ -18,6 +18,10 @@ jobs:
         with:
           node-version: 20.12.0
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
