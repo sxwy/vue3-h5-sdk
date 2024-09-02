@@ -5,9 +5,7 @@
 TODO
 
 - 测试
-- 自动化发布
-- github action
-- .vue 文件编译？
 - 使用 docs
 - 使用 demo
+- .vue 文件编译
 - tsc 编译 module

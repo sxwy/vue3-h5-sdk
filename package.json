@@ -81,7 +81,7 @@
     "format:css": "stylelint --fix --allow-empty-input ./src/**.{vue,css,less,sass,scss}"
   },
   "peerDependencies": {
-    "axios": "^1.7.6",
+    "axios": "^1.7.7",
     "pinia": "^2.2.2",
     "vue": "^3.4.38"
   },
@@ -98,7 +98,7 @@
     "@sxwy/stylelint-config": "^2.0.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^22.5.1",
+    "@types/node": "^22.5.2",
     "@vitejs/plugin-vue": "^5.1.3",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/babel-plugin-jsx": "^1.2.2",
@@ -108,7 +108,7 @@
     "eslint": "^8.57.0",
     "husky": "^9.1.5",
     "jsdom": "^25.0.0",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "only-allow": "^1.2.1",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
