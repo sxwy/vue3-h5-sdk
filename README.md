@@ -7,5 +7,6 @@ TODO
 - 测试
 - 使用 docs
 - 使用 demo
+- 完善的组件示例
 - .vue 文件编译
 - tsc 编译 module
