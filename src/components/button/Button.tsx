@@ -8,8 +8,8 @@ export default defineComponent({
     return () => {
       return (
         <>
-          <div class="btn loading">button</div>
           <Loading />
+          <div class="sxwy-button">button</div>
         </>
       )
     }
