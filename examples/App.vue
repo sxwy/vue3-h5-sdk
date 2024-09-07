@@ -1,20 +1,68 @@
 <template>
   <div class="container">
-    <div class="header">
-      <img src="./assets/logo.png" class="header__logo" />
-      <span class="header__title">H5-SDK</span>
+    <div class="logo">
+      <img src="./assets/logo.png" class="logo__icon" />
+      <span class="logo__title">H5-SDK</span>
     </div>
-    <div class="group">
-      <div class="group__name">组件</div>
-      <div class="group__item">
-        <span class="group__item__name">Button 按钮</span>
-        <img src="./assets/arrows.png" class="group__item__icon" />
+    <div class="desc">基于 Vue3 的开发工具包</div>
+    <div
+      class="group"
+      v-for="(group, groupIndex) of state.groupList"
+      :key="groupIndex"
+    >
+      <div class="group__title">{{ group.title }}</div>
+      <div
+        class="group__render"
+        v-for="(render, renderIndex) of group.renderList"
+        :key="renderIndex"
+        @click="handleRenderClick(render)"
+      >
+        <span class="group__render__name">{{ render.name }}</span>
+        <img src="./assets/arrows.png" class="group__render__icon" />
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  import { reactive } from 'vue'
+
+  interface RenderInfo {
+    name: string
+    url: string
+  }
+
+  interface GroupInfo {
+    title: string
+    renderList: RenderInfo[]
+  }
+
+  interface State {
+    groupList: GroupInfo[]
+  }
+
+  const state = reactive<State>({
+    groupList: [
+      {
+        title: '组件',
+        renderList: [
+          {
+            name: 'Button 按钮',
+            url: ''
+          }
+        ]
+      }
+    ]
+  })
+
+  const handleRenderClick = (render: RenderInfo) => {
+    console.log(
+      '%c render==========>',
+      'color: #4FC08D; font-weight: bold',
+      render
+    )
+  }
+</script>
 
 <style lang="scss">
   .container {
@@ -22,11 +70,11 @@
     background-color: #eff2f5;
     min-height: 100vh;
 
-    .header {
+    .logo {
       display: flex;
       align-items: center;
 
-      &__logo {
+      &__icon {
         width: 35px;
         height: 35px;
         margin-right: 20px;
@@ -38,15 +86,21 @@
       }
     }
 
+    .desc {
+      color: #969799;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
     .group {
       margin-top: 30px;
 
-      &__name {
+      &__title {
         color: #969799;
         font-size: 14px;
       }
 
-      &__item {
+      &__render {
         display: flex;
         justify-content: space-between;
         align-items: center;

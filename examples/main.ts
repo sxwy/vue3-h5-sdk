@@ -12,5 +12,10 @@ const app = createApp(App)
 
 app
   .use(pinia)
-  .use(SXWYH5SDK({ env: ENV.PROD, mockerPort: 8090 }))
+  .use(
+    SXWYH5SDK({
+      env: ENV.PROD,
+      mockerPort: 8090
+    })
+  )
   .mount('#app')
