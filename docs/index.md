@@ -1,21 +1,20 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: 'h5-sdk'
-  text: 'A VitePress Site'
-  tagline: My great project tagline
+  tagline: 基于 Vue3 的开发工具包
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /markdown-examples
+      link: /components/button
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /components/button
 
 features:
-  - title: Feature A
+  - icon: 🛠️
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
