@@ -8,6 +8,7 @@ export default defineConfig((config) => {
     base: config.command === 'serve' ? '/' : './',
     resolve: {
       alias: {
+        '@': fileURLToPath(new URL('./examples', import.meta.url)),
         '@sxwy/h5-sdk': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
