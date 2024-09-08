@@ -3,24 +3,30 @@ import { fileURLToPath, URL } from 'node:url'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
-  title: 'h5-sdk',
+  title: 'H5-SDK',
   description: '基于 Vue3 的开发工具包',
   lastUpdated: true,
   themeConfig: {
     search: {
       provider: 'local'
     },
-    nav: [{ text: '组件', link: '/components/button' }],
-    sidebar: [
-      { text: 'Button', link: '/components/button' },
-      { text: 'Loading', link: '/components/loading' }
+    nav: [
+      { text: '开发指南', link: '/guide/introduce' },
+      { text: 'components', link: '/components/button' }
     ],
+    sidebar: {
+      '/guide/': [{ text: '介绍', link: '/guide/introduce' }],
+      '/components/': [
+        { text: 'Button', link: '/components/button' },
+        { text: 'Loading', link: '/components/loading' }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sxwy/vue3-h5-sdk' }
     ],
     footer: {
       message: 'Released under the MIT License',
-      copyright: 'Copyright © 2024-present ChenJie'
+      copyright: 'Copyright © 2024-present chenjie'
     }
   },
   vite: {

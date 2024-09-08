@@ -2,22 +2,27 @@
 layout: home
 
 hero:
-  name: 'h5-sdk'
+  name: 'H5-SDK'
   tagline: 基于 Vue3 的开发工具包
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /components/button
+      text: 开始使用
+      link: /guide/introduce
     - theme: alt
-      text: API Examples
-      link: /components/button
+      text: 示例预览
+      link: /demo
 
 features:
+  - icon: 🚀
+    title: 前沿技术
+    details: 项目使用 Vue3 + TypeScript5 + Vite5 进行开发
   - icon: 🛠️
-    title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: 通用性
+    details: 组件支持主流的 ESM、CJS、UMD 格式，并支持 Tree Shaking
+  - icon: 💪
+    title: 易用性
+    details: 源码采用 TypeScript 编写，支持编辑器代码提示和自动完成
+  - icon: 📖
+    title: 文档示例
+    details: 提供了丰富的教程和示例供开发者学习使用
 ---
