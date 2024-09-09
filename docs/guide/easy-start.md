@@ -27,7 +27,7 @@ yarn add @sxwy/h5-sdk -S
 pnpm i @sxwy/h5-sdk -P
 ```
 
-## 使用
+## 组件使用
 
 ### 常规用法
 
