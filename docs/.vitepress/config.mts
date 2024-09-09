@@ -15,7 +15,10 @@ export default defineConfig({
       { text: 'components', link: '/components/button' }
     ],
     sidebar: {
-      '/guide/': [{ text: '介绍', link: '/guide/introduce' }],
+      '/guide/': [
+        { text: '介绍', link: '/guide/introduce' },
+        { text: '快速上手', link: '/guide/easy-start' }
+      ],
       '/components/': [
         { text: 'Button', link: '/components/button' },
         { text: 'Loading', link: '/components/loading' }

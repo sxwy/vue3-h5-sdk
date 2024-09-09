@@ -5,6 +5,8 @@ export interface H5SDKConfig {
   env: ENV
   /** mocker 服务启动的端口 */
   mockerPort: number
+  /** 是否需要注册组件 */
+  isRegisterComponents?: boolean
 }
 
 /**

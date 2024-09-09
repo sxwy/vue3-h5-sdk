@@ -5,6 +5,6 @@ import Button from '../Button'
 describe('attr', () => {
   test('class', () => {
     const wrapper = mount(Button)
-    expect(wrapper.get('.sxwy-button').text()).toBe('button')
+    expect(wrapper.get('.sxwy-button').text()).toBe('按钮')
   })
 })
