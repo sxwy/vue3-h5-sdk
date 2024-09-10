@@ -12,7 +12,8 @@ export default defineConfig({
     },
     nav: [
       { text: '开发指南', link: '/guide/introduce' },
-      { text: 'components', link: '/components/button' }
+      { text: 'api', link: '/api/introduce' },
+      { text: 'components', link: '/components/introduce' }
     ],
     sidebar: {
       '/guide/': [
@@ -20,6 +21,7 @@ export default defineConfig({
         { text: '快速上手', link: '/guide/easy-start' }
       ],
       '/components/': [
+        { text: '介绍', link: '/components/introduce' },
         { text: 'Button', link: '/components/button' },
         { text: 'Loading', link: '/components/loading' }
       ]
