@@ -6,7 +6,7 @@
 - 支持无痛刷新 `token`
 - 支持各个业务的返回结构体
 
-> 对应的环境就是上一章初始化时传递给 `SDK` 的 `ENV` 参数，`SDK` 会根据环境自动切换 `baseUrl`
+> 对应的环境就是[快速上手](../guide/easy-start.md)章节初始化时传递给 `SDK` 的 `ENV` 参数，`SDK` 会根据环境自动切换 `baseUrl`
 
 ## baseApi
 
