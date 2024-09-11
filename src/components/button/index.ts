@@ -3,9 +3,10 @@ import { withInstall } from '../../utils'
 
 export const Button = withInstall(_Button)
 
-export * from './types'
-
 export default Button
+
+export * from './types'
+export * from './Button'
 
 declare module 'vue' {
   export interface GlobalComponents {

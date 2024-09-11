@@ -5,11 +5,7 @@ export default defineComponent({
   name: createComponentName('loading'),
   setup() {
     return () => {
-      return (
-        <>
-          <div class="loading">loading</div>
-        </>
-      )
+      return <div class="sxwy-loading">loading</div>
     }
   }
 })
