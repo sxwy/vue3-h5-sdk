@@ -1,3 +1,21 @@
+# [1.0.0-beta.2](https://github.com/sxwy/vue3-h5-sdk/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-09-11)
+
+### Features
+
+- examples 优化 ([4fef1c6](https://github.com/sxwy/vue3-h5-sdk/commit/4fef1c6e90640a33cbf76ca20a6df2e4494a0d7e))
+- vitepress 初体验 ([323bf87](https://github.com/sxwy/vue3-h5-sdk/commit/323bf87ca085a1d0e76e0d266b6558f414dcab94))
+- 代码优化 ([fe05a96](https://github.com/sxwy/vue3-h5-sdk/commit/fe05a965f1fdb8c24de93828eec5a2826e280640))
+- 优化 example 页面 ([bd8765d](https://github.com/sxwy/vue3-h5-sdk/commit/bd8765d0c84796d27cee5059e450ab52a1036848))
+- 优化测试 ([b5c34a2](https://github.com/sxwy/vue3-h5-sdk/commit/b5c34a2d88c9efd2a26c46519a7cd3ae2b42b142))
+- 命令调整 ([e6535df](https://github.com/sxwy/vue3-h5-sdk/commit/e6535df6b539c66b37d1592231c60279f8a53fde))
+- 命名优化 ([5cf9cee](https://github.com/sxwy/vue3-h5-sdk/commit/5cf9ceedc1bdb97556b5dc8ba4cfb457f46bf017))
+- 文档补充 ([e3e916e](https://github.com/sxwy/vue3-h5-sdk/commit/e3e916e2a120b42b9202aeb9e4882f8b5e9a8ee1))
+- 文档补充 ([034fa6c](https://github.com/sxwy/vue3-h5-sdk/commit/034fa6ce1f1f6caf3252658dfd9ad0408d89e83f))
+- 示例页面优化 ([21f0a2b](https://github.com/sxwy/vue3-h5-sdk/commit/21f0a2b8e454c26af8e845aa6038f3c501cf0a5f))
+- 组件优化 ([0743951](https://github.com/sxwy/vue3-h5-sdk/commit/07439515a0f8978b3b43951ca3e4dc327f088ee0))
+- 组件示例优化 ([71190ef](https://github.com/sxwy/vue3-h5-sdk/commit/71190ef57c82a6d227fda9d57599bb746a651bd9))
+- 调整 npm 配置 ([ca4ce59](https://github.com/sxwy/vue3-h5-sdk/commit/ca4ce5929c5dfe67a11f8f61b704645500957433))
+
 # 1.0.0-beta.1 (2024-08-31)
 
 ### Features
