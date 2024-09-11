@@ -11,6 +11,12 @@ export default {
       path: 'button',
       meta: { title: '按钮' },
       component: () => import('@/pages/components/button.vue')
+    },
+    {
+      name: 'ComponentsLoading',
+      path: 'loading',
+      meta: { title: '加载' },
+      component: () => import('@/pages/components/loading.vue')
     }
   ]
 } as RouteRecordRaw

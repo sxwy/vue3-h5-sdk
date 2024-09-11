@@ -50,6 +50,10 @@
           {
             name: 'Button 按钮',
             url: '/components/button'
+          },
+          {
+            name: 'Loading 加载',
+            url: '/components/loading'
           }
         ]
       }
