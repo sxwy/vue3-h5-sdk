@@ -33,4 +33,4 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           branch: gh-pages
-          folder: 'docs/.vuepress/dist'
+          folder: 'docs/.vitepress/dist'
