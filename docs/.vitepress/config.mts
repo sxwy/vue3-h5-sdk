@@ -13,7 +13,8 @@ export default defineConfig({
     nav: [
       { text: '开发指南', link: '/guide/introduce' },
       { text: 'api', link: '/api/introduce' },
-      { text: 'components', link: '/components/introduce' }
+      { text: 'components', link: '/components/introduce' },
+      { text: 'store', link: '/store/introduce' }
     ],
     sidebar: {
       '/guide/': [
