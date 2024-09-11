@@ -73,3 +73,4 @@ app.use(
 
 - [api](../api/introduce.md)
 - [components](../components/introduce.md)
+- [store](../store/introduce.md)
