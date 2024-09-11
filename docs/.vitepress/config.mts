@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
+  base: '/vue3-h5-sdk/',
   title: 'H5-SDK',
   description: '基于 Vue3 的开发工具包',
   lastUpdated: true,
