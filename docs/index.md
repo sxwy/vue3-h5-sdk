@@ -10,7 +10,7 @@ hero:
       link: /guide/introduce
     - theme: alt
       text: 示例预览
-      link: /demo
+      link: https://github.com/sxwy/vue3-h5-sdk/tree/master/examples
 
 features:
   - icon: 🚀
