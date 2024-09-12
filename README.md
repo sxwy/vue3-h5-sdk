@@ -80,7 +80,7 @@
 
   ```shell
   pnpm install
-   pnpm run docs:dev
+  pnpm run docs:dev
   ```
 
 ## 发布说明
