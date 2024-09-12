@@ -1,3 +1,9 @@
+# [1.0.0-beta.3](https://github.com/sxwy/vue3-h5-sdk/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2024-09-12)
+
+### Features
+
+- 代码优化，开发文档补充 ([cd3f903](https://github.com/sxwy/vue3-h5-sdk/commit/cd3f903ded110f2d11b9ec00c20faafc9263c52a))
+
 # [1.0.0-beta.2](https://github.com/sxwy/vue3-h5-sdk/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-09-11)
 
 ### Features
