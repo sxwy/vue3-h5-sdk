@@ -4,8 +4,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "target": "ES2015",
-    "module": "ES2015",
-    "moduleResolution": "Node",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "jsx": "preserve",
     "jsxImportSource": "vue",
     "strict": true,

@@ -1,11 +1,12 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["./src/**/*", "./example/**/*"],
+  "include": ["./src/**/*", "./examples/**/*"],
   "exclude": ["**/__tests__/**"],
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "paths": {
+      "@/*": ["./examples/*"],
       "@sxwy/h5-sdk": ["./src"],
       "@sxwy/h5-sdk/*": ["./src/*"]
     }

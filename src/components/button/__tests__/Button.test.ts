@@ -1,10 +1,10 @@
 import { describe, expect, test } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Loading from '../Loading'
+import Button from '../Button'
 
 describe('attr', () => {
   test('class', () => {
-    const wrapper = mount(Loading)
-    expect(wrapper.classes()).toContain('sxwy-loading')
+    const wrapper = mount(Button)
+    expect(wrapper.get('.sxwy-button').text()).toBe('按钮')
   })
 })

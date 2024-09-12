@@ -18,6 +18,11 @@ export * from './components/button'
 export * from './components/loading'
 
 export default (config: H5SDKConfig) => {
+  Object.assign(h5SDKConfig, config)
+  if (typeof h5SDKConfig.isRegisterComponents === 'undefined') {
+    h5SDKConfig.isRegisterComponents = true
+  }
+
   const createApi = () => {
     createBaseApi()
     createWxApi()
@@ -31,9 +36,10 @@ export default (config: H5SDKConfig) => {
   }
   return {
     install(app: App) {
-      Object.assign(h5SDKConfig, config)
       createApi()
-      registerComponents(app)
+      if (h5SDKConfig.isRegisterComponents) {
+        registerComponents(app)
+      }
     }
   }
 }

@@ -17,7 +17,7 @@ export const getApiHost = (type: API_TYPE) => {
     }
   }
 
-  const typeObj: {
+  const apiHostObj: {
     [key: string]: string
   } = {
     [API_TYPE.BASE]: '',
@@ -26,22 +26,22 @@ export const getApiHost = (type: API_TYPE) => {
 
   switch (h5SDKConfig.env) {
     case ENV.MOCK:
-      typeObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.MOCK]
-      typeObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.MOCK]
+      apiHostObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.MOCK]
+      apiHostObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.MOCK]
       break
     case ENV.TEST:
-      typeObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.TEST]
-      typeObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.TEST]
+      apiHostObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.TEST]
+      apiHostObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.TEST]
       break
     case ENV.RC:
-      typeObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.RC]
-      typeObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.RC]
+      apiHostObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.RC]
+      apiHostObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.RC]
       break
     case ENV.PROD:
     default:
-      typeObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.PROD]
-      typeObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.PROD]
+      apiHostObj[API_TYPE.BASE] = HOST[API_TYPE.BASE][ENV.PROD]
+      apiHostObj[API_TYPE.WX] = HOST[API_TYPE.WX][ENV.PROD]
       break
   }
-  return typeObj[type]
+  return apiHostObj[type]
 }

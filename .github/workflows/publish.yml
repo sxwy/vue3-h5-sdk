@@ -1,0 +1,32 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: UseNode
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.12.0
+
+      - name: UsePNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          pnpm install --no-frozen-lockfile
+          pnpm run release
