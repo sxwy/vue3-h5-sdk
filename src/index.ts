@@ -34,6 +34,7 @@ export default (config: H5SDKConfig) => {
       app.use(compoment)
     })
   }
+
   return {
     install(app: App) {
       createApi()
