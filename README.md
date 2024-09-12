@@ -48,8 +48,8 @@
 ├── .releaserc.js                     # release 配置
 ├── .stylelintignore                  # stylelint 忽略配置
 ├── .stylelintrc.js                   # stylelint 配置
-├── index.html                        # 根入口
 ├── CHANGELOG.md                      # 版本变更记录
+├── index.html                        # 根入口
 ├── LICENSE                           # 许可证
 ├── package.json                      # 项目配置
 ├── pnpm-lock.yaml                    # 项目版本锁
